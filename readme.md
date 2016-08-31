@@ -1,4 +1,13 @@
 ## Agenda
+### Announcements
+### Managing data for stateful docker applications
+- Presented by [Portworx](https://portworx.com)
+
+### Kubernetes running Docker birthday party
+### Swarm running Docker birthday party
+1. Using Docker Birthday  on Mac 1.12 beta
+   - Distributed Application Bundles (DAB)
+   - `bundle`, `deploy` and `stack`
 1. Birthday running on swarm in the Cloud
    - Cloud - droplets built to 1.12 by hand
    - DAB experimental
@@ -17,14 +26,14 @@
 1. Scale it back down
 
 
-## Cool stuff
+#### Cool stuff
 1. Creating a service is easy
 1. Rolling upgrade built in - need to update the service to support it or create it with the setting initially
 1. Handles service failures, node failures seamlessly
 1. Services scale up and down with a simple command (change to replica count not +- *number*)
 1. Digital hosting is pretty slick
 
-## Minor issues
+#### Minor issues
 1. Couldn't run birthday party example w/o several changes (volumes, networks, links)
 1. DigitalOcean default droplets 1.11 requiring installation by hand
 1. Stacks and DAB files are still experimental in 1.12.  On Mac (probably Windows) experimental features are turned on.  On ubuntu, you have to pull the source and rebuild docker with experimental features turned on. [Expermental features](https://github.com/docker/docker/tree/master/experimental)
