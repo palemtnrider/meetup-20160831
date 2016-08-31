@@ -2,7 +2,7 @@
 1. Birthday running on swarm in the Cloud
    - Cloud - droplets built to 1.12 by hand
    - DAB experimental
-      - no *deploy* or *stack*
+      - no `deploy` or `stack`
    - Hand rolled script
 1. Show mesh routing (hitting app on both nodes)
    - host names are important (i.e. unique)
@@ -27,8 +27,8 @@
 ## Minor issues
 1. Couldn't run birthday party example w/o several changes (volumes, networks, links)
 1. DigitalOcean default droplets 1.11 requiring installation by hand
-1. Stacks and DAB files are still experimental in 1.12.  On Mac (propably Windows) experimental features are turned on.  On ubuntu, you have to pull the source and rebuild docker with experimental features turned on. [Expermental features](https://github.com/docker/docker/tree/master/experimental)
+1. Stacks and DAB files are still experimental in 1.12.  On Mac (probably Windows) experimental features are turned on.  On ubuntu, you have to pull the source and rebuild docker with experimental features turned on. [Expermental features](https://github.com/docker/docker/tree/master/experimental)
 1. Creating DAB file removes top level networks but not the networks defined for each service (container)
 1. If using links and the environment variables it creates, then your services won't be able to communicate - if you rely on the link variables and not name resolution.  See [12 factor app paterns](https:/12factor.net)
 1. When creating a DAB, docker-compose file needs image attribute it can't just have build command
-1. *Side note* When pulling images from dockerhub we received a 403 "repository locked" message.  We changed the image to be private then back to public to fix it.
+1. *Side note* When pulling images from dockerhub we received a `403 repository locked` message.  We changed the image to be private then back to public to fix it.
